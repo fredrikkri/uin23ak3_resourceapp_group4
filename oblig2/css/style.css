@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1140px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #E1E5EE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.6em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  font-weight: 700;
+  padding-left: 0;
+}
+
+.tab {
+  background-color: #2A324B;
+  color: #fff;
+  padding: 0.6rem;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.tab a {
+  font-size: 0.65em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.tab-active {
+  background-color: #fff;
+  color: #2A324B;
+}
+.tab-active a {
+  color: #2A324B;
+}
+
+.tab-content {
+  display: none;
+  background-color: #fff;
+  padding: 2rem;
+}
+.tab-content li {
+  font-size: 0.65em;
+}
+
+.content-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 0.5rem;
+}
+
+h2 {
+  color: #2A324B;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+  .tab:hover {
+    background-color: #fff;
+  }
+  .tab:hover a {
+    color: #2A324B;
+  }
+  .tab-content {
+    padding: 2.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
