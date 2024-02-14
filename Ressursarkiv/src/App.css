@@ -1,97 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  font-size: calc(1em + 1vw);
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  max-width: 1140px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin: auto;
-  min-height: 100vh;
-  background-color: #E1E5EE;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h2 {
-  font-size: 1em;
-}
-
-p {
-  font-size: 0.6em;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  list-style-type: none;
-  font-weight: 700;
-  padding-left: 0;
-}
-
-.tab {
-  background-color: #2A324B;
-  color: #fff;
-  padding: 0.6rem;
-  flex-grow: 1;
-  text-align: center;
-  cursor: pointer;
-}
-.tab a {
-  font-size: 0.65em;
-  color: #fff;
-  text-decoration: none;
-}
-
-.tab-active {
-  background-color: #fff;
-  color: #2A324B;
-}
-.tab-active a {
-  color: #2A324B;
-}
-
-.tab-content {
-  display: none;
-  background-color: #fff;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 2rem;
-}
-.tab-content li {
-  font-size: 0.65em;
+  text-align: center;
 }
 
-.content-active {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  row-gap: 0.5rem;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-h2 {
-  color: #2A324B;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  nav ul {
-    flex-direction: row;
-    gap: 0.6rem;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
-  .tab:hover {
-    background-color: #fff;
-  }
-  .tab:hover a {
-    color: #2A324B;
-  }
-  .tab-content {
-    padding: 2.8rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
