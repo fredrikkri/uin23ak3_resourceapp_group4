@@ -6,7 +6,7 @@ export default function Layout({children}) {
             <nav>
                 <ul>
                     <li><Link to="/">Hjemmeside</Link></li>
-                    <li><Link to="resurrser">Resurrser</Link></li>
+                    <li><Link to="ressurser">Resurrser</Link></li>
                 </ul>
             </nav>
         </header>

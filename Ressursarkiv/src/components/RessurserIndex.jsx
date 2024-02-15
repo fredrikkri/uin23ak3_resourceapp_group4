@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import resources from "../js/ressurser";
-export default function ResurrserIndex(){
+export default function RessurserIndex(){
 
     let tabsHTML = "";
     //tab_items();
@@ -14,7 +14,7 @@ export default function ResurrserIndex(){
 
     return(
         <> 
-            <h1>Resurrser</h1>
+            <h1>Ressursarkiv</h1>
             <ul>
                 {resources.map((category, index) => <li key={category.category+index} className="tab"><Link to={category.category}>{category.category}</Link></li>)}
             </ul>
