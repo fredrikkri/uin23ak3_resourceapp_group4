@@ -48,6 +48,8 @@ nav ul {
 }
 
 .tab {
+    display: flex;
+    align-items: stretch;
     background-color: $dark-blue;
     color: $white;
     padding: 0.6rem;
@@ -57,6 +59,10 @@ nav ul {
     list-style-type: none;
     
     a {
+        @include flexy(flex, column, center);
+        align-items: center;
+        min-height: 100%;
+        min-width: 100%;
         font-size: 0.65em;
         color: $white;
         text-decoration: none;
