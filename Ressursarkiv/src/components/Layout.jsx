@@ -2,17 +2,18 @@ import { Link } from 'react-router-dom'
 export default function Layout({children}) {
     return(
         <>
-            <header>
-                <nav>
-                    <ul>
-                        <li><Link to="/">Hjemmeside</Link></li>
-                        <li><Link to="resurrser"></Link></li>
-                    </ul>
-                </nav>
-            </header>
+        <header>
+            <nav>
+                <ul>
+                    <li><Link to="/">Hjemmeside</Link></li>
+                    <li><Link to="resurrser">Resurrser</Link></li>
+                </ul>
+            </nav>
+        </header>
+        {children}
         <main>
         </main>
-        {children}
+        
         </>
     )
 }
