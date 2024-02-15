@@ -16,7 +16,7 @@ export default function ResurrserIndex(){
         <> 
             <h1>Resurrser</h1>
             <ul>
-                {resources.map((category, index) => <li key={category+index} className="tab"><Link to={category}>{category}</Link></li>)}
+                {resources.map((category, index) => <li key={category.category+index} className="tab"><Link to={category.category}>{category.category}</Link></li>)}
             </ul>
         </>
     )
