@@ -109,18 +109,3 @@ h2 {
         padding: 2.8rem;
     }
 }
-
-// midlertiidig fiks av at hele ruten er klikkbar
-li {
-    display: flex;
-    align-items: stretch;
-    
-    a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100%;
-        min-width: 100%;
-
-    }
-}
