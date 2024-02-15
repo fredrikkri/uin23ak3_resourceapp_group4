@@ -1,15 +1,18 @@
+import { Link } from 'react-router-dom'
 export default function Layout({children}) {
     return(
         <>
-            <header>Den virker.
+            <header>
                 <nav>
-                    <ul></ul>
+                    <ul>
+                        <li><Link to="/">Hjemmeside</Link></li>
+                        <li><Link to="resurrser"></Link></li>
+                    </ul>
                 </nav>
             </header>
         <main>
         </main>
-        <script src="js/ressurser.js"></script>
-        <script src="js/script.js"></script>
+        {children}
         </>
     )
 }
