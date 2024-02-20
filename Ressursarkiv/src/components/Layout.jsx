@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
+import resources from "../js/ressurser"
 export default function Layout({children}) {
     return(
         <>
         <header>
             <nav>
-                <ul>
-                    <li><Link to="/">Hjemmeside</Link></li>
-                    <li><Link to="ressurser">Resurrser</Link></li>
+                <ul className="resource-list">
+                    {resources.map((category, index) => <li key={category.category+index} className="tab"><Link to={category.category}>{category.category}</Link></li>)}
                 </ul>
             </nav>
         </header>
-        {children}
         <main>
+        {children}
         </main>
         
         </>
