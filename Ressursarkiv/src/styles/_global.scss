@@ -1,0 +1,39 @@
+//Colors
+$white: #fff;
+$grey: #E1E5EE;
+$savoy-blue: #58699D;
+$dark-blue: #2A324B;
+
+//Fonts
+$font: 'Montserrat', sans-serif;
+$root-size: calc(1em + 1vw); 
+$document-width: 1260px;
+$document-gutter: 1.5rem;
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+ }
+
+html { font-size: $root-size; }
+
+@mixin flexy($display, $direction, $justify-content) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+}
+
+body {
+    font-family: $font;
+    max-width: $document-width;
+    padding-left: $document-gutter;
+    padding-right: $document-gutter;
+    margin: auto;
+    min-height: 100vh;
+    background-color: $grey;
+    @include flexy(flex, column, center);
+}
+
+h2 { font-size: 1em; }
+
+p { font-size: 0.6em;}

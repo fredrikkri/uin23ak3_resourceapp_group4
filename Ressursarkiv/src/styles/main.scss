@@ -1,44 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
-//Colors
-$white: #fff;
-$grey: #E1E5EE;
-$savoy-blue: #58699D;
-$dark-blue: #2A324B;
-
-//Fonts
-$font: 'Montserrat', sans-serif;
-$root-size: calc(1em + 1vw); 
-$document-width: 1260px;
-$document-gutter: 1.5rem;
-
-@mixin flexy($display, $direction, $justify-content) {
-    display: $display;
-    flex-direction: $direction;
-    justify-content: $justify-content;
-}
-
-* { 
-    box-sizing: border-box;
-    margin: 0;
- }
-
-html { font-size: $root-size; }
-
-body {
-    font-family: $font;
-    max-width: $document-width;
-    padding-left: $document-gutter;
-    padding-right: $document-gutter;
-    margin: auto;
-    min-height: 100vh;
-    background-color: $grey;
-    @include flexy(flex, column, center);
-}
-
-h2 { font-size: 1em; }
-
-p { font-size: 0.6em;}
+@import 'global';
+@import 'mediaQueries';
 
 nav ul {
     @include flexy (flex, column, flex-start);
@@ -92,20 +54,4 @@ nav ul {
 
 h2 {
     color: $dark-blue;
-}
-
-@media only screen and (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        gap: 0.6rem;
-    }
-
-    .tab:hover {
-        background-color: $white;
-        a {color: $dark-blue; }
-    }
-
-    .tab-content {
-        padding: 2.8rem;
-    }
 }
