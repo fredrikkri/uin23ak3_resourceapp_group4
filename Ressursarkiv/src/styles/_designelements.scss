@@ -1,0 +1,12 @@
+.resource-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li{
+        a{
+            padding: 1rem 3rem;
+            border: 1px solid;
+            
+        }
+    }
+}

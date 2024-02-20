@@ -15,7 +15,7 @@ export default function RessurserIndex(){
     return(
         <> 
             <h1>Ressursarkiv</h1>
-            <ul>
+            <ul className="resource-list">
                 {resources.map((category, index) => <li key={category.category+index} className="tab"><Link to={category.category}>{category.category}</Link></li>)}
             </ul>
         </>
