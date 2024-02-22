@@ -1,17 +1,24 @@
 import { Link } from 'react-router-dom'
+import resources from "../js/ressurser"
 export default function Layout({children}) {
+
+    const allCategories = resources.map(item => item.category)
+    const uniqueCategories = new Set(allCategories)
+    const categories = Array.from(uniqueCategories)
+    console.log(categories)
+
+
     return(
         <>
         <header>
             <nav>
-                <ul>
-                    <li><Link to="/">Hjemmeside</Link></li>
-                    <li><Link to="ressurser">Resurrser</Link></li>
+                <ul className="resource-list">
+                    {categories.map((category, index) => <li key={index} className="tab"><Link to={category}>{category}</Link></li>)}
                 </ul>
             </nav>
         </header>
-        {children}
         <main>
+        {children}
         </main>
         
         </>
