@@ -9,6 +9,7 @@ function App() {
 
     <Layout>
       <Routes>
+          <Route path={index}>Index</Route>
           <Route path=":slug" element={<Ressurs />}>
         </Route>
       </Routes>
