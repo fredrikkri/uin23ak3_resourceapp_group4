@@ -10,7 +10,7 @@ export default function Ressurs(){
     useEffect(() => {
         setResource(resources.filter(resource => resource.category === slug))
     },[])
-    console.log("Check", resource)
+    //console.log("Check", resource)
     return (
         <section>
             <h1>{slug}</h1>
