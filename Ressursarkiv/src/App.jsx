@@ -7,12 +7,12 @@ function App() {
 
   return (
 
-    <Routes>
-        <Route index element={<Layout />} />
+    <Layout>
+      <Routes>
           <Route path=":slug" element={<Ressurs />}>
         </Route>
-    </Routes>
-
+      </Routes>
+    </Layout>
   )
 }
 

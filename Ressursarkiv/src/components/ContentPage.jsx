@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom"
 export default function ContentPage({title, text, url}){
     return (
-        <article class="tab-content">
+        <article className="tab-content">
         <h2>{title}</h2>
         <p>{text}</p>
         <ul>
