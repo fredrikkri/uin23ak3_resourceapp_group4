@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import 'global';
 @import 'mediaQueries';
+@import 'designelements';
 
 nav ul {
     @include flexy (flex, column, flex-start);
     list-style-type: none;
     font-weight: 700;
     padding-left: 0;
+    display: flex;
+}
+
+ul{
+    display: flex;
 }
 
 .tab {
-    display: flex;
+
     align-items: stretch;
     background-color: $dark-blue;
     color: $white;
-    padding: 0.6rem;
     flex-grow: 1;
     text-align: center;
     cursor: pointer;
     list-style-type: none;
+    display: flex;
     
     a {
         @include flexy(flex, column, center);
@@ -28,6 +34,7 @@ nav ul {
         font-size: 0.65em;
         color: $white;
         text-decoration: none;
+        padding: 1rem 2rem;
     }
 }
 
