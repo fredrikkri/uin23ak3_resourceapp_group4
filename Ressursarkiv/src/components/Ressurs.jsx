@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import resources from "../js/ressurser"
-import ContentPage from "./ContentPage"
+
 import { useEffect, useState } from "react"
 
 export default function Ressurs(){
@@ -12,10 +12,17 @@ export default function Ressurs(){
     },[])
     //console.log("Check", resource)
     return (
-        <section>
+        resource?.map((item, index) =>  
+        <section key={index} className="tab-content">
             <h1>{slug}</h1>
-            {resource?.map((item, index) =>  <ContentPage key={index} title={item.title} category={item.category} url={item.url} />)}
-        </section>
-    
+            <article>
+                <h2>{item.title}</h2>
+                <ul>
+                    <li> 
+                        <Link to={item.url}>{item.url}</Link>
+                    </li>
+                </ul>
+            </article>
+        </section>)
     )
 }
