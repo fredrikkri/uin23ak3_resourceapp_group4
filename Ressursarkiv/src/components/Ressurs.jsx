@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import resources from "../js/ressurser"
-import ContentPage from "./ContentPage"
+
 import { useEffect, useState } from "react"
 
 export default function Ressurs(){
