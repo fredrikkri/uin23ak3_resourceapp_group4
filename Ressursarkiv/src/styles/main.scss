@@ -13,6 +13,7 @@ nav ul {
 
 ul{
     display: flex;
+    flex-direction: column;
 }
 
 .tab {
@@ -36,7 +37,13 @@ ul{
         text-decoration: none;
         padding: 1rem 2rem;
     }
+
+    a:focus{
+        background-color: $white;
+        color: $dark-blue;
+    }
 }
+
 
 .tab-active {
     background-color: $white;
@@ -54,9 +61,11 @@ ul{
     }
 }
 
+// Er denne overflødig? asn
 .content-active {
     @include flexy(flex, column, flex-start);
     row-gap: 0.5rem;
+    
 }
 
 h2 {
