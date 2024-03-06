@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router-dom"
-//import resources from "../js/ressurser"
 
 import { useEffect, useState } from "react"
 

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-//import resources from "../js/ressurser"
 export default function Layout({resources, children}) {
 
     const allCategories = resources.map(item => item.category)
