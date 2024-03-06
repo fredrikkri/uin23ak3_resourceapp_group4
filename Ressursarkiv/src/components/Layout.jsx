@@ -1,12 +1,9 @@
 import { Link } from 'react-router-dom'
-import resources from "../js/ressurser"
-export default function Layout({children}) {
+export default function Layout({resources, children}) {
 
     const allCategories = resources.map(item => item.category)
     const uniqueCategories = new Set(allCategories)
     const categories = Array.from(uniqueCategories)
-    console.log(categories)
-
 
     return(
         <>
