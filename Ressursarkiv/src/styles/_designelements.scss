@@ -3,11 +3,14 @@
     //flex-wrap: wrap;
     list-style: none;
     flex-direction: row;
+    gap: 1rem; // spacing mellom tab-elementer i nav (asn)
+
     li{
         a{
-            padding: 1rem 3rem;
-            border: 1px solid;
-            
+            // padding: 1rem 3rem;
+            padding: 1em 3em;
+            //TODO: Hvis denne fjernes, fjernes jo border, så da må tab-elementer justeres på en annen måte. (asn)
+            //border: 1px solid; 
         }
     }
 }
