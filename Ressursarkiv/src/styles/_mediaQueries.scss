@@ -1,3 +1,19 @@
+
+// Testet media queries for å gjøre innholdet responsivt med koden under
+// Etter samtale med Kjell-Magne, ble vi egentlig enige om å lage all scss kode by default som "mobile first"
+
+// @media only screen and (max-width: 768px) {
+//     .resource-list{
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     nav ul {
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
+
 @media only screen and (min-width: 768px) {
     nav ul {
         flex-direction: row;
