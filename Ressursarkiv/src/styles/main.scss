@@ -26,6 +26,7 @@ ul{
     cursor: pointer;
     list-style-type: none;
     display: flex;
+    text-transform: uppercase;
     
     a {
         @include flexy(flex, column, center);
@@ -48,6 +49,7 @@ ul{
 .tab-active {
     background-color: $white;
     color: $dark-blue;
+    text-transform: uppercase;
 
     a { color: $dark-blue; }
 }
@@ -70,4 +72,5 @@ ul{
 
 h2 {
     color: $dark-blue;
+    text-transform: uppercase;
 }
