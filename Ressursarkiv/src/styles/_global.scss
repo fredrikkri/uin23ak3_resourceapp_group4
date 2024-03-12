@@ -29,7 +29,7 @@ body {
     padding-left: $document-gutter;
     padding-right: $document-gutter;
     margin: auto;
-    min-height: 100vh;
+    min-height: 500px;
     background-color: $grey;
     @include flexy(flex, column, center);
 }

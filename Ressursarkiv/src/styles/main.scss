@@ -55,15 +55,6 @@ ul{
     a { color: $dark-blue; }
 }
 
-.tab-content {
-    //display: none;
-    background-color: $white;
-    padding: 2rem;
-    li {
-        font-size: 0.65em;
-    }
-}
-
 // Er denne overflødig? asn
 .content-active {
     @include flexy(flex, column, flex-start);
