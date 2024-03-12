@@ -1,13 +1,13 @@
-// .resource-list{
-//     display: flex;
-//     //flex-wrap: wrap;
-//     list-style: none;
-//     flex-direction: column; //endret fra row til column for å å følge "mobile first" design prinsipper
-//     //gap: 1rem; // spacing mellom tab-elementer i nav (asn)
+.resource-list{
+    display: flex;
+    //flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column; //endret fra row til column for å å følge "mobile first" design prinsipper
+    //gap: 1rem; // spacing mellom tab-elementer i nav (asn)
 
-//     li{
-//         a{
-//             padding: 1em 3em; //endret fra rem til em 
-//         }
-//     }
-// }
+    li{
+        a{
+            padding: 1em 3em; //endret fra rem til em 
+        }
+    }
+}

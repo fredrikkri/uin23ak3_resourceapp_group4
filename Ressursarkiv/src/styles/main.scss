@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import 'global';
-@import 'mediaQueries';
 @import 'designelements';
+@import 'mediaQueries';
+
 
 nav ul {
     @include flexy (flex, column, flex-start);
