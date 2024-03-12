@@ -1,9 +1,8 @@
 import { Link, useParams } from "react-router-dom"
-import resources from "../js/ressurser"
 
 import { useEffect, useState } from "react"
 
-export default function Ressurs(){
+export default function Ressurs({resources}){
     const {slug} = useParams()
     const [resource, setResource] = useState()
 
@@ -14,7 +13,7 @@ export default function Ressurs(){
     console.log("Check", resource)
     return (
         <article className="tab-content">
-        <h1>{slug}</h1>
+        <h2>{slug}</h2>
         <ul>
             {resource?.map((item, index) =>  
             <li key={index} title={item.title} category={item.category} url={item.url}> 
